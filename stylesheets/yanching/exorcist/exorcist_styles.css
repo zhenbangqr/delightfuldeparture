@@ -1,0 +1,409 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure exorcist CSS Styles
+    Author: Wai Yan Ching
+    Date: 25 September 2023
+    Filename: exorcist_styles.css
+*/
+
+
+
+
+/* Whole body styles */
+body {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 95px; /* 300px is needed for the huge navigation header */
+  background-color: #000000;
+  background-image: url(../images/ddlogo.png); /* The background pattern */
+  background-repeat: repeat;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+/* The header, combined with navigation bar*/
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  width: 100%;
+  max-height: 200px;
+  padding: 2px;
+  background-color: #000000;
+  opacity: 1;
+  transition: all 0.6s ease;
+  z-index: 1000;
+  top: 0;
+  align-items: center; /* Center items vertically */
+}
+
+/* Style for the dropdown */
+.dropdown {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Use the same width as the buttons for the dropdown menu */
+.dropdown .dropdown-menu {
+  display: none; /* Hide the dropdown by default */
+  position: absolute;
+  z-index: 1001;
+  top: 100%;
+  width: 80px;
+  border-radius: 15px;
+}
+
+/* Style for dropdown menu items */
+.dropdown .dropdown-menu li {
+  width: 100%; /* Make the dropdown items the same width as the dropdown menu */
+  text-align: center;
+  padding: 10px; /* Adjust padding as needed */
+  margin: 5px;
+  background-color: #414141;
+  border: 2px solid white;
+  border-radius: 15px; 
+}
+
+/* Display the dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* The main GR Logo */
+.logo {
+  text-align: center;
+  transition: all 0.6s ease;
+}
+
+/* Logo size and position at start */
+.logo img {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  max-height: 90px;
+  max-width: 320px;
+  transition: all 0.6s ease;
+}
+
+/* The buttons you see */
+.listeditems {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: px;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+/* Things inside the button */
+.listeditems a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* Button things */
+.listeditems ul {
+  margin: 0px;
+  list-style: none;
+  display: flex; /* Display listed items in horizontal line */
+}
+
+/* Button things */
+.listeditems ul li {
+  width: 80px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  background-color: #414141;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+/* Button color when hovered */
+.listeditems ul li:hover {
+  background-color: #959595;
+}
+
+/* Shrink navigation bar and make semi-transparent */
+.scrolled.navbar {
+  justify-content: space-between;
+  display: flex;
+  transition: all 0.6s ease;
+  opacity: 0.9;
+}
+
+/* Shrink logo to the left side */
+.scroll.logo img {
+  max-height: 67.5px;
+  max-width: 240px;
+  transition: all 0.6s ease;
+  margin-left: 20px;
+}
+
+  /* Footer */
+  .footer {
+    padding: 5px 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    text-align: center;
+    color: #F5F3EC;
+    position: relative;
+    width: 100%;
+  }
+
+  /* The livechat button */
+  .livechat {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 480px;
+    right: 20px;
+    background-color: #000000;
+    color: #000000;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+    height: 60px;
+    width: 80px;
+  }
+
+/* Color for icons in navigation list */
+  .navlist {
+    color: #FFFFFF;
+  }
+
+  /* Color of footer phone icon */
+  .fa-phone {
+    color: #FFFFFF;
+  }
+
+  /* Color of footer utensils icon */
+  .fa-utensils {
+    color: #FFFFFF;
+  }
+
+  /* Color of footer envelope icon */
+  .fa-envelope {
+    color: #FFFFFF;
+  }
+
+  /* Color of livechat headset icon */
+  .fa-headset {
+    color: #FFFFFF;
+    font-size: 30px;
+  }
+
+  /* Color of livechat hyperlink */
+  a[href^="livechat.html"] {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+  }
+
+  /* Color of livechat hyperlink on hover */
+  a[href^="livechat.html"]:hover {
+    text-decoration: none;
+    color: #a9a9a9;
+  }
+
+  /* Color of mailto link */
+a[href^="mailto:"] {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* Color of mailto link on hover */
+a[href^="mailto:"]:hover {
+  text-decoration: underline;
+  color: #959595;
+}
+
+/* Color of tel link */
+a[href^="tel:"] {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* Color of tel link on hover */
+a[href^="tel:"]:hover {
+  text-decoration: underline;
+  color: #959595;
+}
+
+/* Color of Google Maps hyperlink */
+a[href^="https://www.google.com/maps/dir//Lobby+Level+Sunway+Resort,+Persiaran+Lagoon,+Bandar+Sunway,+47500+Subang+Jaya,+Selangor./data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x31cc4c86db2d8de9:0xc1f3eb2b5e4da6eb?sa=X&ved=2ahUKEwidoe3NqL6AAxVfxDgGHTlLAgoQ9Rd6BAhEEAA&ved=2ahUKEwidoe3NqL6AAxVfxDgGHTlLAgoQ9Rd6BAhTEAQ"] {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* Color of Google Maps hyperlink on hover */
+.map :hover {
+  text-decoration: none;
+  color: #959595;
+}
+
+
+/*their name style */
+.exorcistName {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* Price of exorcist */
+.price {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #777;
+}
+
+/* What they said */
+.exorcistDescription {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  margin: auto;
+  max-width: 480px;
+  font-size: 15px;
+  padding: 2px;
+}
+
+
+
+/* Report button */
+.chat {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-top: 20px;
+
+  border:1px #f2f2f2;
+  border-radius: 12px;
+
+}
+
+/* Report button on hover */
+.chat:hover {
+  color: #ff0033;
+  text-decoration: none;
+}
+
+
+/*The title*/
+.personalExorcistTitle{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 90px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; /* Width of the box */
+  height: 50px; /* Height of the box */
+  display: flex;
+  font-size: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px; /* Padding for text */
+  color: #FFFFFF;
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-color: #000000;
+  }
+
+  
+
+
+
+
+.exorcistGridContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 1200px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.block {
+  background-color: #202020;
+  font-size: 10px;
+  border: solid 2px white;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.exorcistPic {
+  border: solid 2px white;
+  background-image: url(/images/gridbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+}
+
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 12px;;
+}
+
+.exorcistDescription{
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(2px); /* You can adjust the value to control the initial position */
+  transition: opacity 1.0s ease-in-out, transform 0.5s ease-in-out;
+  animation: fadeIn 1.5s forwards; /* Adjust animation duration as needed */
+ 
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

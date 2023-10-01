@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*
+Semester 1 Assignment
+Delightful Departure Website
+
+Delightful Departure Reviews Page CSS
+Author: Chok Chun Fai 
+Date: 16 September 2023
+Filename: reviews.css
+*/
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Darker semi-transparent black background */
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.reviews-container img {
+  width: 100%;
+}
+
+.top-reviews {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.top-reviews td {
+  text-align: center;
+  padding: 10px;
+  vertical-align: top;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.top-reviews img {
+  width: 250px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+
+.review-info {
+  text-align: center;
+  /* Align text to the left within the container */
+  margin-top: 10px;
+  /* Add some space between the image and info */
+}
+
+.review-title {
+  font-weight: bold;
+}

@@ -1,0 +1,98 @@
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Promotion CSS
+    Author: Goh Kar Hang
+    Date: 24 September 2023
+    Filename: promotion.css
+*/
+
+body {
+    margin-top: 80px;
+}
+
+#title {
+    color: white;
+    text-align: center;
+}
+
+#promotion-title {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.promotion {
+    display: flex;
+}
+
+.left-container, .right-container {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #414141;
+    flex-direction: column;
+    backdrop-filter: blur(3px);
+
+}
+
+.details-container {
+    height: 10px;
+}
+
+.details {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.details1 {
+    height: 15px;
+}
+
+.details2 {
+    height: 20px;
+}
+
+.details3 {
+    height: 50px;
+}
+
+.promotion-img {
+    margin-bottom: 15px;
+}
+
+.pm-button {
+    background-color: red;
+    text-align: center;
+    padding: 5px;
+    width: 180px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.pm-details {
+    color: white;
+    font-weight: bold;
+}
+
+.pm-button > a {
+    text-decoration: none;
+}
+
+.pm-button:hover {
+    background-color: rgb(140, 198, 225);
+}
+
+hr.divider {
+    height: 3px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba(214,89,89,1) 0%, rgba(138,129,22,1) 33%, rgba(98,171,141,1) 66%, rgba(73,139,199,1) 100%);
+  }

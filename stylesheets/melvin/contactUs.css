@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Main CSS Styles
+    Author: Melvin Wong Ka Kian
+    Date: 22 July 2023
+    Filename: contactUs.css
+*/
+
+/*----------------------------------------------------------------------------*/
+.contacts {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker semi-transparent black background */
+  padding: 20px;
+  border: solid 2px white;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.phoneNumber{
+  text-decoration: none;
+  color:#39FF14;
+}
+.customerSupport {
+  color: white;
+}
+.custSuppTitle{
+  color: white;
+  font-size: 25px;
+}
+
+.timeAvailable{
+  color:red;
+}
+
+.funeralDirector {
+  color: pink;
+}
+
+.ourAgents {
+  color: #4695d6;
+}
+
+.agents {
+  color: white;
+}
+
+.agentsNameNBranch{
+  color:#4695d6;
+}
+
+.funDicImg {
+  width: 200px;
+  height: 301px;
+  border-radius: 15px;
+}
+
+.agentsImg {
+  width: 200px;
+  height: 301px;
+  border-radius: 15px;
+}

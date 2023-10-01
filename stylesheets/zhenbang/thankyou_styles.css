@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Thank You CSS Styles
+    Author: Liow Zhen Bang
+    Date: 22 July 2023
+    Filename: thankyou_styles.css
+*/
+
+/* This only contains CSS Style for thank you page, for header, footer, go to main_styles.css */
+body {
+    margin-top: 0px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: black;
+    width: 300px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 0 auto; 
+    max-width: 95%;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.headerimg {
+    width: 100%;
+}
+
+.thankyou {
+    padding: 80px;
+    font-size: 24px;
+}

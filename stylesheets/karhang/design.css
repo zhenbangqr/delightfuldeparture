@@ -1,0 +1,90 @@
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Design CSS
+    Author: Goh Kar Hang
+    Date: 24 September 2023
+    Filename: design.css
+*/
+
+body {
+    margin-top: 100px;
+}
+
+.content {
+    backdrop-filter: blur(2px);
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+    padding: 0px 50px 0px 50px;
+}
+
+#coffin-size {
+    margin-left: 50px;
+}
+
+#coffinSize {
+    width: 28%;
+}
+
+.custom-select {
+    padding: 5px; /* Add padding for better appearance */
+    border-radius: 5px; /* Add rounded corners */
+    color: white;
+    background-color: black;
+}
+
+/* Style the select element when it's focused */
+.custom-select:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+}
+
+#otherMaterialBox {
+    display: none;
+    margin-top: 10px;
+}
+
+#customColorPanel {
+    display: none;
+    margin-top: 10px;
+}
+
+.popButton {
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 10px 10px 0px;
+}
+
+#outputContainer {
+    display: none;
+    position: fixed;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 60%;
+    border-radius: 25px;
+    text-align: center;
+    z-index: 999;
+}
+
+.close-button {
+    color: grey;
+    position: absolute;
+    font-size: 25px;
+    top: 10px;
+    right: 16px;
+    cursor: pointer;
+}
+
+#pictureInput {
+    display: none;
+}
+

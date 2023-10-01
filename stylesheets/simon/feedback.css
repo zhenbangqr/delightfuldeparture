@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/*
+Semester 1 Assignment
+Delightful Departure Website
+
+Delightful Departure Home Page
+Author: Chok Chun Fai 
+Date: 16 September 2023
+Filename: feedback.css
+*/
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker semi-transparent black background */
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 0 auto; 
+    border-radius: 20px;
+}
+
+.feedback>img {
+    width: 100%;
+    height: auto;
+}
+
+
+/****** Style Star Rating Widget *****/
+.rating1>h3,
+.rating2>h3,
+.rating3>h3,
+.rating4>h3,
+.rating5>h3 {
+    float: left;
+    margin: 10px;
+}
+
+/* round checkbox */
+.rating1:not(:checked)>input,
+.rating2:not(:checked)>input,
+.rating3:not(:checked)>input,
+.rating4:not(:checked)>input,
+.rating5:not(:checked)>input {
+    /* position:absolute;
+	top:-9999px; */
+    visibility: hidden;
+}
+
+.rating1:not(:checked)>label,
+.rating2:not(:checked)>label,
+.rating3:not(:checked)>label,
+.rating4:not(:checked)>label,
+.rating5:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.rating1:not(:checked)>label:before,
+.rating2:not(:checked)>label:before,
+.rating3:not(:checked)>label:before,
+.rating4:not(:checked)>label:before,
+.rating5:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rating1>input:checked~label,
+.rating2>input:checked~label,
+.rating3>input:checked~label,
+.rating4>input:checked~label,
+.rating5>input:checked~label {
+    color: yellow;
+
+}
+
+.rating1:not(:checked)>label:hover,
+.rating1:not(:checked)>label:hover~label,
+.rating2:not(:checked)>label:hover,
+.rating2:not(:checked)>label:hover~label,
+.rating3:not(:checked)>label:hover,
+.rating3:not(:checked)>label:hover~label,
+.rating4:not(:checked)>label:hover,
+.rating4:not(:checked)>label:hover~label,
+.rating5:not(:checked)>label:hover,
+.rating5:not(:checked)>label:hover~label {
+    color: rgba(128, 128, 128, 0.7);
+
+}
+
+.rating1>input:checked+label:hover,
+.rating1>input:checked+label:hover~label,
+.rating1>input:checked~label:hover,
+.rating1>input:checked~label:hover~label,
+.rating1>label:hover~input:checked~label,
+.rating2>input:checked+label:hover,
+.rating2>input:checked+label:hover~label,
+.rating2>input:checked~label:hover,
+.rating2>input:checked~label:hover~label,
+.rating2>label:hover~input:checked~label,
+.rating3>input:checked+label:hover,
+.rating3>input:checked+label:hover~label,
+.rating3>input:checked~label:hover,
+.rating3>input:checked~label:hover~label,
+.rating3>label:hover~input:checked~label,
+.rating4>input:checked+label:hover,
+.rating4>input:checked+label:hover~label,
+.ratinge4>input:checked~label:hover,
+.rating4>input:checked~label:hover~label,
+.rating4>label:hover~input:checked~label,
+.rating5>input:checked+label:hover,
+.rating5>input:checked+label:hover~label,
+.rating5>input:checked~label:hover,
+.rating5>input:checked~label:hover~label,
+.rating5>label:hover~input:checked~label {
+    color: grey;
+}
+
+
+
+/* comments */
+.feedback>#comments {
+    margin: 0px;
+    padding: 20px;
+    width: 40%;
+    height: 50px;
+    background-color: white;
+    font-family: quicksand;
+}
+
+.feedback>h3 {
+    display: block;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 280px;
+    font-family: century;
+    font-weight: bold;
+}
+
+.feedback>#commentButton {
+    margin-top: 10px;
+    height: 40px;
+    width: 10%;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    border: 2px solid #fff;
+    /* Add a border */
+    padding: 5px 10px;
+    /* Add padding for better visibility */
+    border-radius: 5px;
+    /* Add rounded corners */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Add a hover effect */
+}
+
+.feedback>#commentButton:hover {
+    background-color: black;
+    /* Change background color on hover */
+    color: grey;
+    /* Change text color on hover */
+}
+
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.popup-message p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.popup-message button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.popup-message button:focus {
+    outline: none;
+}
+
+.close {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    /* Add a border */
+    padding: 5px 10px;
+    /* Add padding for better visibility */
+    border-radius: 5px;
+    /* Add rounded corners */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Add a hover effect */
+}
+
+.close:hover {
+    background-color: #fff;
+    /* Change background color on hover */
+    color: #000;
+    /* Change text color on hover */
+}

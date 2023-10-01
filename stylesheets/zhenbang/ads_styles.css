@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Goods Ads Styles
+    Author: Liow Zhen Bang
+    Date: 22 July 2023
+    Filename: ads_styles.css
+*/
+
+
+/* This only contains CSS Style for ads, for header, footer, go to main_styles.css */
+
+  .adpopup {
+    display: none;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .adpopup-content {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .adpopup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #313131;
+    color: #FFFFFF;
+    border-radius: 5px 5px 0 0;
+    border-radius: 15px;
+  }
+  
+  .adclose-popup {
+    cursor: pointer;
+  }
+  
+  .adpopup-body {
+    padding: 10px;
+  }
+  
+  .adpopup-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }

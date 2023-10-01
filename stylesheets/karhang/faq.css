@@ -1,0 +1,49 @@
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure FAQ CSS
+    Author: Goh Kar Hang
+    Date: 24 September 2023
+    Filename: faq.css
+*/
+
+body {
+    margin-top: 80px;
+}
+
+#title {
+    color: white;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+
+.toggle {
+    font-size: 20px;
+    border: none;
+}

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*
+Semester 1 Assignment
+Delightful Departure Website
+
+Delightful Departure Home Page
+Author: Chok Chun Fai 
+Date: 16 September 2023
+Filename: T_C.css
+*/
+
+body img {
+  width: 100%;
+}
+
+.TnC-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Darker semi-transparent black background */
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+  position: relative;
+}
+
+
+.TnC-content {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align content to the left */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Darker semi-transparent black background */
+  padding: 20px;
+  border: 2px solid white;
+  /* Add a white border */
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+  position: relative;
+  max-width: 800px;
+  /* Limit the width of the container */
+  margin: 0 auto;
+  /* Center the container horizontally */
+}

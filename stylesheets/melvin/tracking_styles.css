@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Main CSS Styles
+    Author: Melvin Wong Ka Kian, Liow Zhen Bang
+    Date: 22 July 2023
+    Filename: tracking.css
+*/
+
+/* This only contains CSS Style for tracking page, for header, footer, go to main_styles.css */
+
+/*Color of the form*/
+
+.formfieldset {
+  width: 800px;
+  height: 600px;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.tracking {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+/*Making the form look good*/
+.trackingOrderForm {
+  margin-bottom: 20px;
+}
+
+.orderStatus {
+  color: white;
+}
+
+#trackNumber {
+  border-radius: 8px;
+}
+
+#trackButton {
+  border-radius: 8px;
+}
+
+#trackButton:hover {
+  background-color: tomato;
+}

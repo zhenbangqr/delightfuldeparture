@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Main CSS Styles
+    Author: Melvin Wong Ka Kian
+    Date: 22 September 2023
+    Filename: promotion.css
+*/
+.information {
+    color: white;
+}
+
+.paragraph {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 60%;
+    background-color: black;
+}
+
+form {
+    border: 0.002rem solid white;
+    background-color: rgb( 195, 150, 19 );
+    opacity: 0.98;
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 150px;
+    margin-bottom: 60px;
+    height: 570px;
+    width: 40%;
+    border-radius: 20px;
+}
+
+div.formBox {
+    margin-top: 5%;
+    margin-left: 9%;
+}
+
+input {
+    color: black;
+    border: 0.8rem solid white;
+    padding: 0.4rem;
+    margin-right: 5%;
+    outline: none;
+    height: 5px;
+    font-size: medium;
+    margin-bottom: 1.8%;
+    border-radius: 20px;
+}
+
+input::-webkit-input-placeholder {
+    opacity: 0.5;
+}
+
+div.continueBox {
+    margin-top: 25px;
+    text-align: center;
+}
+
+div.continueBox button {
+    width: 150px;
+    border-radius: 20px;
+}

@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Goods CSS Styles
+    Author: Liow Zhen Bang
+    Date: 22 July 2023
+    Filename: columbarium_styles.css
+*/
+
+
+/* This only contains CSS Style for columbarium page, for header, footer, go to main_styles.css */
+
+  .columbarium-location-img {
+    width: 640px;
+    border-radius: 15px;
+  }
+
+  .columbarium-location-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .popup-content {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #313131;
+    color: #FFFFFF;
+    border-radius: 5px 5px 0 0;
+    border-radius: 15px;
+  }
+  
+  .close-popup {
+    cursor: pointer;
+  }
+  
+  .popup-body {
+    padding: 10px;
+  }
+  
+  .popup-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .aboutcolumbarium {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .colimg {
+    border-radius: 15px;
+    width: 640px;
+  }
+
+  .columbariumexplaination {
+    border: 2px solid white;
+    width: 640px;
+    border-radius: 15px;
+    color: #000000;
+    background-color: #FFFDF4;
+    text-align: center;
+  }
+
+  .columbariumexplaination-container {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 0 auto; 
+    max-width: 95%;
+  }

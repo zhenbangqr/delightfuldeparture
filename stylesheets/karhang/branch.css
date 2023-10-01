@@ -1,0 +1,110 @@
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Branch CSS
+    Author: Goh Kar Hang
+    Date: 22 September 2023
+    Filename: branch.css
+*/
+
+body {
+    margin-top: 80px;
+}
+
+#title {
+    color: white;
+    text-align: center;
+}
+
+.content {
+    backdrop-filter: blur(2px);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.branch {
+    display: flex;
+    padding: 30px 0px 30px 0px;
+}
+
+.branch-cheras {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branch-johor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branch-penang {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branch-details {
+    display: flex;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.branch-details > p > a {
+    color: grey;
+    text-decoration: none;
+}
+
+.branch-details > p > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.mapouter {
+    flex: 1;
+    height: 400px;
+    position: relative;
+}
+
+.direction-button {
+    display: flex;
+}
+
+.maps-button {
+    color:  white;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    margin: 20px;
+    font-size: 25px;
+    background-color: #414141;
+    border-radius: 18px;
+    width: 180px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gmap_iframe {
+    width: 400px;
+    height: 250px;
+    border: none;
+}
+
+.branch-photo {
+    max-width: 100%;
+    height: auto;
+}

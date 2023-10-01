@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/*
+Semester 1 Assignment
+Delightful Departure Website
+
+Delightful Departure Home Page CSS
+Author: Chok Chun Fai 
+Date: 16 September 2023
+Filename: homepage.css
+*/
+
+.video-container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  max-width: 95%;
+}
+
+.firstRow>video {
+  position: relative;
+  border: none;
+}
+
+.AstronomiaVideo {
+  border-radius: 15px;
+  width: 70%;
+}
+
+.displaySlides {
+  width: 100%;
+  text-align: center;
+  /* Center align the image horizontally */
+}
+
+.displaySlides img {
+  max-width: 100%;
+  /* Make sure the image doesn't exceed the container width */
+  height: auto;
+  /* Maintain the aspect ratio of the image */
+}
+
+.displaySlides-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  /* Add hover transition */
+}
+
+.displaySlides-button:hover {
+  background-color: #fff;
+  /* Change background color on hover */
+  color: rgba(0, 0, 0, 0.8);
+  /* Change text color on hover */
+}
+
+.display-left {
+  left: 0;
+}
+
+.display-right {
+  right: 0;
+}
+
+.top-reviews-container img {
+  margin-top: 10px;
+  width: 80%;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
+  /* Adjust the shadow color and size as needed */
+  transition: filter 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.top-reviews-container img:hover {
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 1));
+  /* Adjust the shadow color and size on hover */
+}
+
+.top-reviews-container::before {
+  content: "";
+  background-image: rgb(0, 0, 0, 0.6);
+  /* Set your image path here */
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.service-description-map-container {
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+  color: white;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px; 
+  max-width: 95%;
+}
+
+.service-description-map-container::before {
+  content: "";
+  background-image: url("/medias/images/simon/homepage/servicepackages.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: neon-breath 1.5s linear infinite alternate;
+  opacity: 0.6;
+  border-radius: 15px;
+}
+
+@keyframes neon-breath {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.service-description-map-container h1 {
+  color: #FFD700;
+  text-shadow: 0 0 10px #FF6EFF, 0 0 20px #FF6EFF, 0 0 30px #FF6EFF, 0 0 40px #FFD700, 0 0 70px #FFD700, 0 0 80px #FFD700, 0 0 100px #FFD700, 0 0 150px #FFD700;
+  text-decoration: underline;
+}
+
+.slideshow-container {
+  margin-top: 100px;
+}
+
+.slideshow-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation-links {
+  margin-top: 10px;
+}
+
+.navigation-links a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.white-text {
+  color: white;
+  transition: color 0.3s ease;
+  /* Add a smooth color transition */
+}
+
+.neon-effect {
+  color: #FFD700;
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 70px #FFD700, 0 0 80px #FFD700, 0 0 100px #FFD700, 0 0 150px #FFD700;
+}
+
+.neon-hover:hover {
+  color: #FFD700;
+}
+
+.top-reviews-container {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  overflow: hidden;
+}
+
+.vision {
+  margin: 10px 0px 10px 0px;
+  padding: 3%;
+  width: 80%;
+  height: 400px;
+  background-color: white;
+  background-image: linear-gradient(to bottom right, white, rgb(116, 116, 116));
+  box-sizing: border-box;
+  transition: background-color 1s;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  margin-top: 20px; 
+  max-width: 95%;
+  border-radius: 15px;
+}
+
+.know_more {
+  border: none;
+  background: silver;
+  color: #000000 !important;
+  font-weight: 100;
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  font-family: quicksand;
+}
+
+.know_more:hover {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.733);
+  box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.733);
+  transition: all 0.3s ease 0s;
+  font-family: quicksand;
+  text-transform: uppercase;
+}
+
+img {
+  border-radius: 15px;
+}

@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/*
+Semester 1 Assignment
+Delightful Departure Website
+
+Delightful Departure About Page CSS
+Author: Chok Chun Fai 
+Date: 16 September 2023
+Filename: about.css
+*/
+
+.staff-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.description-content-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 70%;
+  border-radius: 20px;
+}
+
+.description {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 18px;
+}
+
+.AboutUs {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.founder {
+  margin-bottom: 20px;
+}
+
+.column {
+  margin: 0 10px;
+}
+
+.staff {
+  text-align: center;
+}
+
+/* Adjust styles for the Founder's column */
+.founder .column {
+  flex: 1;
+}
+
+.displaySlides-container {
+  position: relative;
+  overflow: hidden;
+  width: 65%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.displaySlides {
+  width: 100%;
+  text-align: center;
+}
+
+.displaySlides img {
+  max-width: 100%;
+  height: auto;
+}
+
+.displaySlides-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.displaySlides-button:hover {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.display-left {
+  left: 0;
+}
+
+.display-right {
+  right: 0;
+}
+
+img {
+  border-radius: 20px;
+}

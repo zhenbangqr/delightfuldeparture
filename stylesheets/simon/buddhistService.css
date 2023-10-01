@@ -1,0 +1,114 @@
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Design CSS
+    Author: Chok Chun Fai, Melvin Wong Ka Kian
+    Date: 22 September 2023
+    Filename: buddhistService.css
+*/
+
+body {
+    margin-top: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.GRIDPLEASE {
+    display: grid;
+    grid-template-rows: repeat(2);
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.packageContainer1 {
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.packageContainer2 {
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-top: 10px;
+}
+
+#sub-title {
+    color: white;
+}
+
+#templePhoto1 {
+    flex: 1;
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+
+#templePhoto2 {
+    flex: 1;
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+
+.content {
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.details {
+    display: flex;
+}
+
+p.details {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(165, 121, 54, 0.8);
+    padding: 35px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#sub-title {
+    font-size: 20px;
+}
+
+img {
+    border-radius: 20px;
+}
+
+#pdficon {
+    border-radius: 0px;
+}
