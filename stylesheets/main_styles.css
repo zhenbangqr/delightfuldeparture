@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Main CSS Styles
+    Author: Liow Zhen Bang
+    Date: 22 July 2023
+    Filename: main_styles.css
+*/
+
+/* This only contains CSS Style for header, footer and navigation list */
+
+/* Whole body styles */
+body {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 100px;
+  padding-top: 95px;
+  background-color: #000000;
+  background-image: url(/medias/images/ddlogo.png); /* The background pattern */
+  background-repeat: repeat;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+/* The header, combined with navigation bar*/
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  width: 100%;
+  max-height: 200px;
+  padding: 2px;
+  background-color: #111111;
+  opacity: 1;
+  transition: all 0.6s ease;
+  z-index: 1000;
+  top: 0;
+  align-items: center; /* Center items vertically */
+  animation: breathe 0.8s infinite alternate; /* Breathing animation */
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+@keyframes breathe {
+  0% {
+    box-shadow: 0 0 40px #FFD700;
+  }
+
+  25% {
+    box-shadow: 0 0 50px #FFD700; /* Adjust the shadow size as needed */
+  }
+
+  50% {
+    box-shadow: 0 0 60px #FFD700; /* Adjust the shadow size as needed */
+  }
+
+  75% {
+    box-shadow: 0 0 70px #FFD700; /* Adjust the shadow size as needed */
+  }
+
+  100% {
+    box-shadow: 0 0 80px #FFD700; /* Adjust the shadow size as needed */
+  }
+}
+
+/* Style for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Use the same width as the buttons for the dropdown menu */
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1001;
+  top: 100%;
+  width: 80px;
+  border-radius: 15px;
+  padding-left: 0px;
+}
+
+/* Style for dropdown menu items */
+.dropdown .dropdown-menu li {
+  width: 100%; /* Make the dropdown items the same width as the dropdown menu */
+  text-align: center;
+  padding: 10px; /* Adjust padding as needed */
+  margin: 5px;
+  background-color: #414141;
+  border: 2px solid white;
+  border-radius: 15px; 
+}
+
+/* Display the dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* The main GR Logo */
+.logo {
+  text-align: center;
+  transition: all 0.6s ease;
+}
+
+/* Logo size and position at start */
+.logo img {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  max-height: 90px;
+  max-width: 320px;
+  transition: all 0.6s ease;
+}
+
+.tagline {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; /* Width of the box */
+  height: 50px; /* Height of the box */
+  display: flex;
+  font-size: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px; /* Padding for text */
+  color: #FFFFFF;
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-color: #000000;
+  text-shadow: 0 0 0.5rem #FFD700, 0 0 1rem #FFD700, 0 0 1.5rem #FFD700;
+  }
+
+/* The buttons you see */
+.listeditems {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: px;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+/* Things inside the button */
+.listeditems a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* Button things */
+.listeditems ul {
+  margin: 0px;
+  list-style: none;
+  display: flex; /* Display listed items in horizontal line */
+}
+
+/* Button things */
+.listeditems ul li {
+  width: 80px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  background-color: #414141;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+/* Button color when hovered */
+.listeditems ul li:hover {
+  background-color: #313131;
+  transition: all 0.5s ease;
+  transform: scale(0.9);
+  animation: breathe 0.8s infinite alternate;
+}
+
+/* Shrink navigation bar and make semi-transparent */
+.scrolled.navbar {
+  justify-content: space-between;
+  display: flex;
+  transition: all 0.6s ease;
+  opacity: 0.9;
+}
+
+/* Shrink logo to the left side */
+.scroll.logo img {
+  max-height: 67.5px;
+  max-width: 240px;
+  transition: all 0.6s ease;
+  margin-left: 20px;
+}
+
+  /* Footer */
+  .footer {
+    padding: 5px 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111111;
+    color: #F5F3EC;
+    position: relative;
+    width: 100%;
+    height: 160px;
+    animation: breathe 0.8s infinite alternate;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    bottom: 0%;
+  }
+
+  .footer-left {
+    margin-left: 60px;
+    width: 384px;
+  }
+  
+  .footer-right {
+    margin-right: 175px;
+  }
+
+.chat-container {
+  z-index: 9999;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.livechat-toggle {
+  background-color: #FFFFFF;
+  color: #000000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chat-box {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+}
+
+.chat {
+  border-radius: 15px;
+}
+
+/* Color for icons in navigation list */
+  .navlist {
+    color: #FFFFFF;
+  }
+
+  /* Color of livechat hyperlink */
+  a[href^="livechat.html"] {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+  }
+
+  /* Color of livechat hyperlink on hover */
+  a[href^="livechat.html"]:hover {
+    text-decoration: none;
+    color: #a9a9a9;
+  }
+
+  /* Color of mailto link */
+a[href^="mailto:"] {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* Color of mailto link on hover */
+a[href^="mailto:"]:hover {
+  text-decoration: none;
+  color: #959595;
+}
+
+/* Color of tel link */
+a[href^="tel:"] {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* Color of tel link on hover */
+a[href^="tel:"]:hover {
+  text-decoration: none;
+  color: #959595;
+}
+
+/* Color of Google Maps hyperlink */
+a[href^="https://www.google.com/maps/dir/3.2201537,101.7182172/Tunku+Abdul+Rahman+University+of+Management+and+Technology+(TAR+UMT),+Ground+Floor,+Bangunan+Tan+Sri+Khaw+Kai+Boh+(Block+A),+Jalan+Genting+Kelang,+Setapak,+53300+Kuala+Lumpur,+Federal+Territory+of+Kuala+Lumpur/@3.2168247,101.7130416,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x31cc3843bfb6a031:0x2dc5e067aae3ab84!2m2!1d101.7265571!2d3.2152552?entry=ttu"] {
+  text-decoration: none;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+/* Color of Google Maps hyperlink on hover */
+.map :hover {
+  text-decoration: none;
+  color: #959595;
+}
+
+.headset {
+  padding: 10px;
+  width: 60%;
+}
+
+.left-icon {
+  width: 15px;
+}
+
+.right-icon {
+  width:30px;
+  padding: 5px;
+}
+
+.footerimage {
+  width: 60%;
+  padding-top: 20px;
+}
+
+.morebranches {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.morebranches:hover {
+  text-decoration: none;
+  color: #959595;
+}

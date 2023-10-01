@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Goods Page
+    Author: Liow Zhen Bang
+    Date: 22 September 2023
+    Filename: goods.html
+-->
+
+  <meta charset="utf-8" />
+  <title>Goods</title>
+  <meta name="viewport" content="width=1024, height=768">
+  <link href="/stylesheets/main_styles.css" rel="stylesheet" />
+  <link href="/stylesheets/zhenbang/goods_styles.css" rel="stylesheet" />
+  <link href="/stylesheets/zhenbang/ads_styles.css" rel="stylesheet" />
+</head>
+
+<header class="navbar">
+  <div class="logo">
+      <a href="/html/simon/homepage.html">
+          <img src="/medias/images/ddmainlogo.png" alt="Logo">
+      </a>
+  </div>
+
+  <nav class="listeditems">
+      <ul class="navlist">
+
+          <li class="dropdown">
+              <a href="/html/simon/homepage.html" class="dropdown-toggle">&nbsp;Home
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="/html/simon/about.html">About Us</a></li>
+                  <li><a href="/html/simon/T_C.html">Terms & Conditions</a></li>
+                  <li><a href="/html/karhang/faq.html">FAQS</a></li>
+                  <li><a href="/html/yanching/login.html">Member</a></li>
+                  <li><a href="/html/karhang/promotion.html">Promotions</a></li>
+              </ul>
+          </li>
+
+          <li class="dropdown">&nbsp;Contact Us
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="/html/melvin/contactUs.html">Customer Support</a></li>
+                  <li><a href="/html/karhang/branch.html">Locate Us</a></li>
+                  <li><a href="/html/simon/feedback.html">Feedback</a></li>
+                  <li><a href="/html/simon/reviews.html">Reviews</a></li>
+              </ul>
+          </li>
+
+          <li class="dropdown">&nbsp;Products
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="/html/zhenbang/transport.html">Coffin Transportation</a></li>
+                  <li><a href="/html/zhenbang/goods.html">Essential Goods</a></li>
+                  <li><a href="/html/karhang/coffindesign.html">Coffins</a></li>
+                  <li><a href="/html/zhenbang/columbarium.html">Columbarium</a></li>
+                  <li><a href="/html/melvin/tracking.html">Tracking</a></li>
+                  <li><a href="/html/melvin/grabdcar.html">Grab-D-Car</a></li>
+              </ul>
+          </li>
+
+          <li class="dropdown">&nbsp;Services
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="/html/simon/buddhistService.html">Buddhist Service</a></li>
+                  <li><a href="/html/melvin/christianService.html">Christian Service</a></li>
+                  <li><a href="/html/karhang/service.html">White Ladies</a></li>
+                  <li><a href="/html/karhang/service2.html">Dancing Pallbearers</a></li>
+                  <li><a href="/html/yanching/exorcist.html">Exorcist</a></li>
+              </ul>
+          </li>
+
+      <li id="cart-icon"><img class="cart-icon-img" src="/medias/images/icons/bag-shopping-solid-white.svg"></i></li>
+
+    </ul>
+  </nav>
+  <div class="cart">
+    <h2 class="cart-title">Your Cart</h2>
+    <div class="cart-content"></div>
+    <p class="cartpricedesc">Note: Different item calculates in different quantity. Please check before checkout.</p>
+    <div class="total">
+      <div class="total-title">Total</div>
+      <div class="total-price">RM0</div>
+    </div>
+    <button type="button" class="btn-buy">Buy Now</button>
+    <img src="/medias/images/icons/circle-xmark-solid.svg" id="cart-close"></i>
+  </div>
+  </div>
+</header>
+
+<body>
+
+  <div class="tagline">
+    <h1>Essential Goods</h1>
+  </div>
+
+  <br />
+
+  <section class="shop-container">
+    <div class="shop-content">
+      <!-- BOX 1 -->
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/apple.png" alt="Apple" class="product-img">
+        <h2 class="product-title">Apple</h2>
+        <div class="product-price">RM8.90</div>
+        <p class="pricedesc">Price listed is per kilogram</p>
+        <p class="desc">Crispy Apples. From Fuji.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/pear.png" alt="Pear" class="product-img">
+        <h2 class="product-title">Pear</h2>
+        <div class="product-price">RM9.90</div>
+        <p class="pricedesc">Price listed is per kilogram</p>
+        <p class="desc">Juicy Pears.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/orange.png" alt="Orange" class="product-img">
+        <h2 class="product-title">Orange</h2>
+        <div class="product-price">RM9.90</div>
+        <p class="pricedesc">Price listed is per kilogram</p>
+        <p class="desc">Sweet Valencia Oranges.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/lime.png" alt="lime" class="product-img">
+        <h2 class="product-title">Lime</h2>
+        <div class="product-price">RM4.90</div>
+        <p class="pricedesc">Price listed is per gram</p>
+        <p class="desc">Used to shower after funerals. Keep youself clean.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/fagao.png" alt="Fa Gao" class="product-img">
+        <h2 class="product-title">Fa Gao</h2>
+        <div class="product-price">RM3.90</div>
+        <p class="pricedesc">Price listed is per cup</p>
+        <p class="desc">Prosperity cake, not Fa Gao You.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/angyee.png" alt="Ang Yee" class="product-img">
+        <h2 class="product-title">Ang Yee</h2>
+        <div class="product-price">RM3.50</div>
+        <p class="pricedesc">Price listed is per piece</p>
+        <p class="desc">Red bean fillings.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/flourvermiceili.png" alt="Flour Vermiceili" class="product-img">
+        <h2 class="product-title">Flour Vermiceili</h2>
+        <div class="product-price">RM5.00</div>
+        <p class="pricedesc">Price listed is per pack</p>
+        <p class="desc">Your well known Mee Suah.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/longan.png" alt="Longan" class="product-img">
+        <h2 class="product-title">Longan</h2>
+        <div class="product-price">RM7.00</div>
+        <p class="pricedesc">Price listed is per kilogram</p>
+        <p class="desc">Longans. Dried.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/reddates.png" alt="Red Dates" class="product-img">
+        <h2 class="product-title">Red Dates</h2>
+        <div class="product-price">RM14.90</div>
+        <p class="pricedesc">Price listed is per 500 grams</p>
+        <p class="desc">Sweet dates.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/egg.png" alt="Eggs" class="product-img">
+        <h2 class="product-title">Eggs</h2>
+        <div class="product-price">RM7.00</div>
+        <p class="pricedesc">Price listed is per 10 pieces</p>
+        <p class="desc">10 eggs. A class.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/grains.png" alt="Grains" class="product-img">
+        <h2 class="product-title">Grains</h2>
+        <div class="product-price">RM9.90</div>
+        <p class="pricedesc">Price listed is per plate</p>
+        <p class="desc">Grains for some rituals.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/candies.png" alt="Candies" class="product-img">
+        <h2 class="product-title">Candies</h2>
+        <div class="product-price">RM6.90</div>
+        <p class="pricedesc">Price listed is per pack</p>
+        <p class="desc">Typical candies. Assorted</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/rice.png" alt="Rice" class="product-img">
+        <h2 class="product-title">Rice</h2>
+        <div class="product-price">RM5.00</div>
+        <p class="pricedesc">Price listed is per 100 grams</p>
+        <p class="desc">White rice. Local.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/ricewine.png" alt="Rice Wine" class="product-img">
+        <h2 class="product-title">Rice Wine</h2>
+        <div class="product-price">RM18.90</div>
+        <p class="pricedesc">Price listed is per bottle</p>
+        <p class="desc">18% alcohol.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/chopsticks.png" alt="Chopsticks" class="product-img">
+        <h2 class="product-title">Chopsticks</h2>
+        <div class="product-price">RM9.90</div>
+        <p class="pricedesc">Price listed is per pair</p>
+        <p class="desc">Normal chopsticks.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/redchopsticks.png" alt="Red Chopsticks" class="product-img">
+        <h2 class="product-title">Red Chopsticks</h2>
+        <div class="product-price">RM10.90</div>
+        <p class="pricedesc">Price listed is per pair</p>
+        <p class="desc">Normal chopstick but red.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/redbowl.png" alt="Red Bowl" class="product-img">
+        <h2 class="product-title">Red Bowl</h2>
+        <div class="product-price">RM6.90</div>
+        <p class="pricedesc">Price listed is per piece</p>
+        <p class="desc">Red bowls.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/redspoon.png" alt="Red Spoon" class="product-img">
+        <h2 class="product-title">Red Spoon</h2>
+        <div class="product-price">RM4.90</div>
+        <p class="pricedesc">Price listed is per 5 pieces</p>
+        <p class="desc">Red plastic spoons.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/roastedchiken.png" alt="Apple" class="product-img">
+        <h2 class="product-title">Roasted Chicken</h2>
+        <div class="product-price">RM58.88</div>
+        <p class="pricedesc">Price listed is per plate (1kg)</p>
+        <p class="desc">Crispy roasted chickens.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/roastedduck.png" alt="Apple" class="product-img">
+        <h2 class="product-title">Roasted Duck</h2>
+        <div class="product-price">RM88.88</div>
+        <p class="pricedesc">Price listed is per plate (1kg)</p>
+        <p class="desc">Crispy roasted ducks.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/roastedpig.png" alt="Apple" class="product-img">
+        <h2 class="product-title">Roasted Pig</h2>
+        <div class="product-price">RM108.88</div>
+        <p class="pricedesc">Price listed is per plate (1kg)</p>
+        <p class="desc">Crispy roasted pigs.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/teabag.png" alt="Tea Bag" class="product-img">
+        <h2 class="product-title">Tea Bag</h2>
+        <div class="product-price">RM4.90</div>
+        <p class="pricedesc">Price listed is per 10 pieces</p>
+        <p class="desc">Iron Guan Yin flavored.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/chickenbowl.png" alt="Chicken Bowl" class="product-img">
+        <h2 class="product-title">Chicken Bowl</h2>
+        <div class="product-price">RM6.90</div>
+        <p class="pricedesc">Price listed is per piece</p>
+        <p class="desc">The legendary bowl.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/oillamp.png" alt="Oil Lamp" class="product-img">
+        <h2 class="product-title">Oil Lamp</h2>
+        <div class="product-price">RM4.90</div>
+        <p class="pricedesc">Price listed is per piece</p>
+        <p class="desc">Lotus shaped.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/josssticks.png" alt="Joss Sticks" class="product-img">
+        <h2 class="product-title">Joss Sticks</h2>
+        <div class="product-price">RM17.90</div>
+        <p class="pricedesc">Price listed is per pack</p>
+        <p class="desc">Assorted joss sticks. All flavors available.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/hellbanknote.png" alt="Hell Bank Note" class="product-img">
+        <h2 class="product-title">Hell Bank Note</h2>
+        <div class="product-price">RM19.90</div>
+        <p class="pricedesc">Price listed is per pack</p>
+        <p class="desc">Inflation down there. A pack worths 100,000,000,000,000.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/jingyijosspaper.png" alt="Jing Yi Joss Paper" class="product-img">
+        <h2 class="product-title">Jing Yi Joss Paper</h2>
+        <div class="product-price">RM8.90</div>
+        <p class="pricedesc">Price listed is per kilograms</p>
+        <p class="desc">Represents daily items for ancestors.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/incenseburner.png" alt="Incense Burner" class="product-img">
+        <h2 class="product-title">Incense Burner</h2>
+        <div class="product-price">RM98.90</div>
+        <p class="pricedesc">Price listed is per piece</p>
+        <p class="desc">Burner for joss sticks.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/josspaper.png" alt="Joss Paper" class="product-img">
+        <h2 class="product-title">Joss Paper</h2>
+        <div class="product-price">RM6.90</div>
+        <p class="pricedesc">Price listed is per stack</p>
+        <p class="desc">Typical joss papers, 916K gold or silver available.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/ancestorsjosspaper.png" alt="Ancestors Joss Paper" class="product-img">
+        <h2 class="product-title">Ancestors Joss Paper</h2>
+        <div class="product-price">RM8.90</div>
+        <p class="pricedesc">Price listed is per stack</p>
+        <p class="desc">Joss papers specifically for ancestors.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/7colorpapers.png" alt="7 Color Papers" class="product-img">
+        <h2 class="product-title">7 Color Papers</h2>
+        <div class="product-price">RM3.90</div>
+        <p class="pricedesc">Price listed is per stack</p>
+        <p class="desc">Colored papers that represent 7 color of clothes.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/afterlifemoney.png" alt="After Life Money" class="product-img">
+        <h2 class="product-title">After Life Money</h2>
+        <div class="product-price">RM4.90</div>
+        <p class="pricedesc">Price listed is per stack</p>
+        <p class="desc">After life money for ancestors.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/openroadjosspaper.png" alt="Open Road Joss Papers" class="product-img">
+        <h2 class="product-title">Open Road Joss Papers</h2>
+        <div class="product-price">RM6.90</div>
+        <p class="pricedesc">Price listed is per stack</p>
+        <p class="desc">Joss papers to open the road for the death.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/paperalphard.png" alt="Paper Toyota Alphard" class="product-img">
+        <h2 class="product-title">Paper Toyota Alphard</h2>
+        <div class="product-price">RM1099.90</div>
+        <p class="pricedesc">Price listed is per piece</p>
+        <p class="desc">Paper made Toyota Alphard for the death. F.O.C. driver.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/papercovidkit.png" alt="Paper COVID-19 Kit" class="product-img">
+        <h2 class="product-title">Paper COVID-19 Kit</h2>
+        <div class="product-price">RM149.90</div>
+        <p class="pricedesc">Price listed is per piece</p>
+        <p class="desc">Some traditional medicines for the deaths, in case COVID-19 is still there.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/paperiphone14promax.png" alt="Paper iPhone 14 Pro Max"
+          class="product-img">
+        <h2 class="product-title">Paper iPhone 14 Pro Max</h2>
+        <div class="product-price">RM129.90</div>
+        <p class="pricedesc">Price listed is per stack</p>
+        <p class="desc">Pro. Beyond. Comes in Gold, Silver, Black and Deep Purple. 128GB, 256GB, 512GB and 1TB. Comes
+          with 1 lightning cable in box only. Free SIM Card. Supports 5G</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/redcandles.png" alt="Red Candles" class="product-img">
+        <h2 class="product-title">Red Candles</h2>
+        <div class="product-price">RM6.00</div>
+        <p class="pricedesc">Price listed is per pair</p>
+        <p class="desc">Assorted red candles. Burns with bright flame.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/whiteshirt.png" alt="White Shirt" class="product-img">
+        <h2 class="product-title">White Shirt</h2>
+        <div class="product-price">RM13.90</div>
+        <p class="pricedesc">Price listed is per piece</p>
+        <p class="desc">White shirt in case you didn't wear one.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+      <div class="product-box">
+        <img src="/medias/images/zhenbang/goods/blackshirt.png" alt="Black Shirt" class="product-img">
+        <h2 class="product-title">Black Shirt</h2>
+        <div class="product-price">RM13.90</div>
+        <p class="pricedesc">Price listed is per piece</p>
+        <p class="desc">Black shirt in case you didn't wear one.</p>
+        <img class='add-cart' src="/medias/images/icons/bag-shopping-solid.svg">
+      </div>
+
+  </section>
+
+  <div class="adpopup" id="adpopup">
+    <div class="adpopup-content">
+      <div class="adpopup-header">
+        <span id="adpopup-title">Special Offer</span>
+        <span class="adclose-popup" id="adclose-popup">&times;</span>
+      </div>
+      <div class="adpopup-body">
+        <img src="" alt="" id="adpopup-image">
+        <p id="adpopup-info">Click on image to learn more!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-container">
+    <div class="livechat-toggle" id="chat-toggle">
+      <img class="headset" src="/medias/images/icons/headset-solid.svg">
+    </div>
+    <div class="chat-box" id="chat-box">
+      <iframe class="chat" allow="microphone;" width="300" height="300"
+        src="https://console.dialogflow.com/api-client/demo/embedded/a53d9df6-d8e2-43b1-a0aa-d19412c442e6"></iframe>
+    </div>
+  </div>
+
+  <div class="adpopup" id="adpopup">
+    <div class="adpopup-content">
+      <div class="adpopup-header">
+        <span id="adpopup-title">Special Offer</span>
+        <span class="adclose-popup" id="adclose-popup">&times;</span>
+      </div>
+      <div class="adpopup-body">
+        <!-- Wrap the image in an anchor tag with a placeholder URL -->
+        <a href="#" id="adpopup-link" target="_blank">
+          <img src="" alt="" id="adpopup-image">
+        </a>
+        <p id="adpopup-info">Click on image to learn more!</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<footer class="footer">
+  <div class="footer-left">
+    <img class="footerimage" src="/medias/images/ddmainlogo.png" alt="Logo">
+    <h4>
+      <div class="map"><img class="left-icon" src="/medias/images/icons/location-dot-solid.svg">
+        <a
+          href="https://www.google.com/maps/dir/3.2201537,101.7182172/Tunku+Abdul+Rahman+University+of+Management+and+Technology+(TAR+UMT),+Ground+Floor,+Bangunan+Tan+Sri+Khaw+Kai+Boh+(Block+A),+Jalan+Genting+Kelang,+Setapak,+53300+Kuala+Lumpur,+Federal+Territory+of+Kuala+Lumpur/@3.2168247,101.7130416,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x31cc3843bfb6a031:0x2dc5e067aae3ab84!2m2!1d101.7265571!2d3.2152552?entry=ttu">&nbsp;Main
+          branch</a> /
+        <a href="/html/karhang/branch.html" class="morebranches">More branches</a>
+      </div>
+    </h4>
+  </div>
+  <div class="footer-right">
+    <h3>Get in touch:</h3>
+    <p><a href="tel:60167719430"><img class="right-icon" src="/medias/images/icons/phone-solid.svg"></a>
+      <a href="https://www.facebook.com/steve.zb.05/"><img class="right-icon"
+          src="/medias/images/icons/facebook.svg"></a>
+      <a href="https://wa.me/60167719430"><img class="right-icon" src="/medias/images/icons/whatsapp.svg"></a>
+    </p>
+    <p>
+      <a href="https://t.me/ZhenBangOwO"><img class="right-icon" src="/medias/images/icons/telegram.svg"></a>
+      <a href="https://www.instagram.com/zhenbang_qr/"><img class="right-icon"
+          src="/medias/images/icons/instagram.svg"></a>
+      <a href="mailto:delightfuldeparture@gmail.com"><img class="right-icon"
+          src="/medias/images/icons/envelope-solid.svg"></a>
+    </p>
+  </div>
+</footer>
+
+<script src="/javascript/mainscript.js"></script>
+<script src="/javascript/zhenbang/goods/goodsscript.js"></script>
+<script src="/javascript/zhenbang/ad/ads.js"></script>
+
+</html>

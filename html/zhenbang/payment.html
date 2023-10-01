@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Payment Page
+    Author: Liow Zhen Bang
+    Date: 22 September 2023
+    Filename: payment.html
+-->
+
+    <meta charset="utf-8" />
+    <title>Payment</title>
+    <meta name="viewport" content="width=1024, height=768">
+    <link href="/stylesheets/main_styles.css" rel="stylesheet" />
+    <link href="/stylesheets/zhenbang/payment_styles.css" rel="stylesheet" />
+</head>
+
+<header>
+    <img class="headerimg" src="/medias/images/ddmainlogo.png">
+</header>
+
+<body>
+    <div class="taglinecontainer">
+        <div class="formtagline">
+            <h1>Checkout</h1>
+        </div>
+    </div>
+
+    <div class="summary-container">
+        <div class="item-container">
+            <section class="payment-summary">
+                <h3>Cart:</h3><ul id="paymentCart">
+
+                </ul>
+            </section>
+            <section class="payment-details">
+                <label for="shipping-promo">Shipping Promo Code:</label>
+                <input type="text" id="shipping-promo" name="shipping-promo" placeholder="Enter Shipping Promo Code">
+                <button id="apply-shipping-promo" type="button">Apply</button>
+                <label for="promo">Promo Code:</label>
+                <input type="text" id="promo" name="promo" placeholder="Enter Promo Code">
+                <button id="apply-promo" type="button">Apply</button>
+
+                <div class="info-container">
+                    <p id="total-amount">Total Amount: RM0.00</p>
+                    <p id="shipping-amount">Shipping Fee: RM7.90</p>
+                    <p id="total-shippingsaved">Shipping Saved: RM0.00</p>
+                    <p id="total-promosaved">Total Promo Saved: RM0.00</p>
+                    <p id="final-amount">Final Amount: RM0.00</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="payment-container">
+        <h3>Payment</h3>
+        <form id="payment-form">
+            <label for="name">Name on Card:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="card">Card Number:</label>
+            <input type="text" id="card" name="card" placeholder="**** **** **** ****" required>
+
+            <label for="expiry">Expiration Date:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="***" required>
+
+            <label for="address">Billing Address:</label>
+            <input type="text" id="address" name="address" placeholder="123 Main St, City, Zip" required>
+
+            <button id="submit" type="submit">Submit Payment</button>
+        </form>
+    </div>
+</body>
+
+<script src="/javascript/zhenbang/payment/payment.js"></script>
+
+</html>
