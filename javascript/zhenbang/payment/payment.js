@@ -30,7 +30,7 @@ function displayPaymentSummary() {
     
             // Redirect to homepage after 5 seconds
             setTimeout(() => {
-                window.location.href = "/html/simon/homepage.html"; // Replace with your actual homepage URL
+                window.location.href = "/index.html"; // Replace with your actual homepage URL
             }, 5000);
         } else {
             let itemsHTML = "<h3>Cart:</h3><ul>";
