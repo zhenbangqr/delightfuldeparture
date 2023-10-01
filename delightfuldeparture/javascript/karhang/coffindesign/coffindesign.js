@@ -54,7 +54,7 @@ function submitForm() {
     var closeButton = document.getElementById("closeButton");
     closeButton.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent the link from navigating
-        window.location.href = "homepage.html"; // Redirect to home.html
+        window.location.href = "/delighfuldeparture/html/simon/homepage.html"; // Redirect to homepage.html
         document.getElementById("myForm").reset();
     });
 }
