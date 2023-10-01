@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const pageLinks = [
-    "/html/melvin/grabdcar.html",
-    "/html/karhang/coffindesign.html",
-    "/html/simon/feedback.html",
-    "/html/yanching/login.html",
-    "/html/zhenbang/transport.html",
-    "/html/melvin/christianService.html",
-    "/html/simon/buddhistService.html",
+    "/delightfuldeparture/htmlmelvin/grabdcar.html",
+    "/delightfuldeparture/htmlkarhang/coffindesign.html",
+    "/delightfuldeparture/htmlsimon/feedback.html",
+    "/delightfuldeparture/htmlyanching/login.html",
+    "/delightfuldeparture/htmlzhenbang/transport.html",
+    "/delightfuldeparture/htmlmelvin/christianService.html",
+    "/delightfuldeparture/htmlsimon/buddhistService.html",
   ];
 
   function showRandomImage() {

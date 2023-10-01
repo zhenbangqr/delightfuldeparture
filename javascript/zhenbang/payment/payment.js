@@ -30,7 +30,7 @@ function displayPaymentSummary() {
     
             // Redirect to homepage after 5 seconds
             setTimeout(() => {
-                window.location.href = "/html/simon/homepage.html"; // Replace with your actual homepage URL
+                window.location.href = "/delightfuldeparture/htmlsimon/homepage.html"; // Replace with your actual homepage URL
             }, 5000);
         } else {
             let itemsHTML = "<h3>Cart:</h3><ul>";
@@ -204,7 +204,7 @@ function displayPaymentSummary() {
 }
 
 function redirectToThankYouPage() {
-    window.location.href = "/html/zhenbang/thankyou.html"; // Replace with the URL of your thank you page
+    window.location.href = "/delightfuldeparture/htmlzhenbang/thankyou.html"; // Replace with the URL of your thank you page
 }
 
 const submitPaymentButton = document.getElementById("submit");
