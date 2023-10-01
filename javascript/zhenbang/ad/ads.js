@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "/delightfuldeparture/html/simon/feedback.html",
     "/delightfuldeparture/html/yanching/login.html",
     "/delightfuldeparture/html/zhenbang/transport.html",
-    "/delightfuldeparture/html/melvin/christianService.html",
     "/delightfuldeparture/html/simon/buddhistService.html",
+    "/delightfuldeparture/html/melvin/christianService.html",
   ];
 
   function showRandomImage() {
