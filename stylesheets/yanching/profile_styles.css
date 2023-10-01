@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Profile CSS Styles
+    Author: Wai Yan Ching
+    Date: 28 September 2023
+    Filename: main_styles.css
+*/
+
+/* Whole content styles */
+.profile {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; /* Width of the box */
+  height: 50px; /* Height of the box */
+  display: flex;
+  font-size: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px; /* Padding for text */
+  color: #FFFFFF;
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-color: #000000;
+}
+
+.profileContainer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  position: relative;
+  width: 60%; /* Use percentage for width */
+  max-width: 400px; /* Set a maximum width to prevent it from becoming too wide */
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid white; /* White border */
+  background-color: #414141;
+  box-sizing: border-box;
+}
+
+.detailsContainer {
+  margin-right: auto;
+}
+
+.detailsContainer label {
+  margin-right: auto;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+
+/* style for input fields */
+.detailsContainer input[type="text"],
+.detailsContainer input[type="email"],
+.detailsContainer input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
+  color: white;
+  background-color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-right: auto; /* Include padding and border in the width */
+}
+
+#editProfileButton {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: #000000; /* Default background color */
+  color: #fff; /* Default text color */
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  width: 100px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: none;
+}
+
+#saveProfileButton {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: #000000; /* Default background color */
+  color: #fff; /* Default text color */
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  width: 100px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#editProfileButton:hover,
+#saveProfileButton:hover {
+  background-color: #414141; /* Background color on hover */
+}
+
+#editProfileButton:active,
+#saveProfileButton:active {
+  background-color: #414141; /* Background color when pressed */
+}
+
+.profileForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 200%;
+  height: 100%;
+}

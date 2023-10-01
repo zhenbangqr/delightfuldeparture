@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*
     Semester 1 Assignment
     Delightful Departure Funeral Website
@@ -7,10 +9,6 @@
     Date: 24 September 2023
     Filename: promotion.css
 */
-
-body {
-    margin-top: 80px;
-}
 
 #title {
     color: white;
@@ -32,7 +30,8 @@ body {
     display: flex;
 }
 
-.left-container, .right-container {
+.left-container,
+.right-container {
     display: flex;
     flex: 1;
     margin: 10px;
@@ -82,7 +81,7 @@ body {
     font-weight: bold;
 }
 
-.pm-button > a {
+.pm-button>a {
     text-decoration: none;
 }
 
@@ -94,5 +93,5 @@ hr.divider {
     height: 3px;
     border: none;
     border-radius: 6px;
-    background: linear-gradient(90deg, rgba(214,89,89,1) 0%, rgba(138,129,22,1) 33%, rgba(98,171,141,1) 66%, rgba(73,139,199,1) 100%);
-  }
+    background: linear-gradient(90deg, rgba(214, 89, 89, 1) 0%, rgba(138, 129, 22, 1) 33%, rgba(98, 171, 141, 1) 66%, rgba(73, 139, 199, 1) 100%);
+}

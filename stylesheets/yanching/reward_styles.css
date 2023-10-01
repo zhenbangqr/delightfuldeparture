@@ -1,0 +1,371 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Reward CSS Styles
+    Author: Wai Yan Ching
+    Date: 16 September 2023
+    Filename: reward_styles.css
+*/
+
+/* Pop out box styles */
+.overlay {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 85px;
+  margin-bottom: 5px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Set a high value to ensure it's in front of other elements */
+}
+
+.popup {
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-color: #000000;
+  padding: 20px;
+  margin-top: 15em;
+  text-align: center;
+  z-index: 99999;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#closeButton {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: #000000; /* Default background color */
+  color: #fff; /* Default text color */
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  width: 100px;
+  cursor: pointer;
+}
+
+#closeButton:hover {
+  background-color: #414141; /* Darker blue on hover */
+}
+
+#closeButton:active {
+  background-color: #414141; /* Darker blue on hover */
+}
+
+/*Reward styles*/
+.reward-container {
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #FFFFFF; /* Add solid and specify border color */
+  background-color: #000000;
+  border-radius: 12px;
+  color: #FFFFFF;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  position: relative;
+}
+
+.product-container {
+  margin-left: 15px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+  grid-gap: 40px; /* Adjust the gap between products */
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 85px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; /* Width of the box */
+  height: 50px; /* Height of the box */
+  display: flex;
+  font-size: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px; /* Padding for text */
+  color: #FFFFFF;
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-color: #000000;
+}
+
+/* styles.css */
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  height: 35em;
+}
+
+.cart {
+  padding: 10px;
+  margin: 15px;
+  width: auto;
+}
+
+.cartItems {
+  display: none; /* Initially hidden */
+  opacity: 0; /* Initially fully transparent */
+  transition: opacity 2.0s ease-in-out; /* Smooth fade-in transition */
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  color: #FFFFFF;
+}
+
+.cart-item {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#cartTotal {
+  font-weight: bold;
+  color: #FFD700;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px; /* Padding for text */
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-color: #000000;
+}
+
+.select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: #000000; /* Default background color */
+  color: #fff; /* Default text color */
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 23px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 3px;
+  margin-left: 20px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.points {
+  font-weight: bold;
+  color: #FFD700;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  margin-left: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px; /* Padding for text */
+  font-size: large;
+  border-radius: 15px;
+  border: 1px solid #FFFFFF;
+  background-color: #000000;
+}
+
+.rewardPic {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+}
+
+img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  max-height: auto; /* Maintain the image's aspect ratio */
+  border-radius: 12px;
+}
+
+.productdetails {
+  margin-top: auto;
+}
+
+/* Style for the button */
+.product button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: #000000; /* Default background color */
+  color: #fff; /* Default text color */
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  cursor: pointer;
+  margin-top: auto;
+
+}
+
+/* Change button style on hover */
+.product button:hover {
+  background-color: #414141; /* Darker blue on hover */
+}
+
+.product button:active {
+  background-color: #414141; /* Darker blue on hover */
+}
+
+.checkout {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: #000000; /* Default background color */
+  color: #fff; /* Default text color */
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  width: 100px;
+  cursor: pointer;
+}
+
+.checkout:hover {
+  background-color: #414141; /* Darker blue on hover */
+}
+
+.checkout:active {
+  background-color: #414141; /* Darker blue on hover */
+}
+
+.total-points-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: self-start; /* Vertically center content */
+  width: 100px; /* Set a fixed width for the container */
+  justify-content: space-between; /* Space evenly between child elements (amount and remove button) */
+}
+
+.cart p {
+  font-size: 16px;
+}
+
+.left-container {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  float: left;
+  font-size: 16px;
+}
+
+.right-container {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  float: right;
+  font-size: 16px;
+}
+
+.totalPointsDisplay {
+  width: 200px;
+  margin-left: 20px;
+}
+
+/* Style for the remove button */
+.remove-button {
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5px 3px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-left: auto;
+  height: 23px;
+}
+
+.disclaimer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 80%;
+  align-items: center;
+  padding-left: auto;
+  padding-right: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.disclaimer h1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.disclaimer table {
+  border: 2px solid #FFFFFF;
+  border-collapse: collapse;
+  width: 350px;
+}
+
+.disclaimer p {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.disclaimer tr,
+th,
+td {
+  border: 1px solid #FFFFFF;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(2px); /* You can adjust the value to control the initial position */
+  transition: opacity 1.0s ease-in-out, transform 0.5s ease-in-out;
+  animation: fadeIn 1.5s forwards; /* Adjust animation duration as needed */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

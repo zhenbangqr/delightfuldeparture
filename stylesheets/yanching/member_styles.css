@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Fine Dining Website
+
+    Delightful Departure member CSS Styles
+    Author: Wai Yan Ching
+    Date: 16 September 2023
+    Filename: member_styles.css
+*/
+
+/* Whole content styles */
+#profile-menu img {
+  width: 10px;
+  height: 10px;
+}
+
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-container {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  width: 380px;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.membership-container {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  overflow-y: auto;
+  overflow: hidden;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.membership-content-container {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid white; /* White border */
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.description {
+  font-size: 24px;
+  margin-bottom: 10px; /* Add some space between description and content */
+}
+
+.content {
+  font-size: 18px;
+}
+
+/* Add border style for the blocks */
+.block {
+  width: 200px; /* Set your desired width */
+  height: 100px; /* Set your desired height */
+  background-color: #000000;
+  border: 1px solid #ccc; /* Add border styling */
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 12px;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  background-size: cover; /* Adjust the image size to cover the block */
+  background-position: center; /* Center the image within the block */
+  align-items: center;
+  overflow: hidden;
+  animation: breathing-rainbow 4s linear infinite;
+}
+
+@keyframes breathing-rainbow {
+  0% {
+    box-shadow: 0 0 2px rgba(255, 0, 0, 0.7), 0 0 4px rgba(255, 165, 0, 0.7), 0 0 6px rgba(255, 255, 0, 0.7), 0 0 8px rgba(0, 128, 0, 0.7), 0 0 10px rgba(0, 0, 255, 0.7), 0 0 12px rgba(75, 0, 130, 0.7), 0 0 14px rgba(148, 0, 211, 0.7);
+  }
+
+  50% {
+    box-shadow: 0 0 2px rgba(255, 0, 0, 0.7), 0 0 4px rgba(255, 165, 0, 0.7), 0 0 6px rgba(255, 255, 0, 0.7), 0 0 8px rgba(0, 128, 0, 0.7), 0 0 10px rgba(0, 0, 255, 0.7), 0 0 12px rgba(75, 0, 130, 0.7), 0 0 14px rgba(148, 0, 211, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 2px rgba(255, 0, 0, 0.7), 0 0 4px rgba(255, 165, 0, 0.7), 0 0 6px rgba(255, 255, 0, 0.7), 0 0 8px rgba(0, 128, 0, 0.7), 0 0 10px rgba(0, 0, 255, 0.7), 0 0 12px rgba(75, 0, 130, 0.7), 0 0 14px rgba(148, 0, 211, 0.7);
+  }
+}
+
+.photo {
+  width: 100%; /* Set the width of the photo to 100% to fit within the block */
+  height: 100%; /* Set the height of the photo to 100% to fit within the block */
+  border: solid 2px white;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the photo covers the entire .photo container */
+  border-radius: 15px;
+}
+
+.block:hover {
+  background-color: #000000;
+}
+
+.title {
+  margin-top: auto;
+  font-weight: bold;
+  border: 1px #FFFFFF;
+  border-radius: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.text-container {
+  margin-top: 10px;
+  text-align: center; /* Center the text within the border */
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.profile-container {
+  max-width: 600px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  padding-bottom: 35px; /* Adjust padding as needed */
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #414141;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(2px); /* You can adjust the value to control the initial position */
+  transition: opacity 1.0s ease-in-out, transform 0.5s ease-in-out;
+  animation: fadeIn 1.5s forwards; /* Adjust animation duration as needed */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

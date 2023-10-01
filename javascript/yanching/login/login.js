@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     // Check if the form was submitted
     if (sessionStorage.getItem('formSubmitted')) {
         // Apply styles for the submitted state
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (username === "kahlok666" && password === "77777777") {
             // Set a flag in sessionStorage to indicate successful login
             sessionStorage.setItem('isLoggedIn', 'true');
-            
+
             // Redirect to the member page with the username as a query parameter
             window.location.href = `member.html?username=${encodeURIComponent(username)}`;
         } else {

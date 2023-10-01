@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*
     Semester 1 Assignment
     Delightful Departure Funeral Website
@@ -8,17 +10,18 @@
     Filename: design.css
 */
 
-body {
-    margin-top: 80px;
-}
-
 #title {
     color: white;
     text-align: center;
 }
 
+.sub-title {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
 #sub-title {
-    color: white;
+    font-size: 20px;
 }
 
 .content {
@@ -37,6 +40,7 @@ p.details {
     flex: 2;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .service-photo {
@@ -44,8 +48,5 @@ p.details {
     display: flex;
     width: 300px;
     height: 200px;
-}
-
-#sub-title {
-    font-size: 20px;
+    padding: 10px;
 }

@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*
     Semester 1 Assignment
     Delightful Departure Funeral Website
@@ -7,10 +9,6 @@
     Date: 22 September 2023
     Filename: branch.css
 */
-
-body {
-    margin-top: 80px;
-}
 
 #title {
     color: white;
@@ -107,4 +105,8 @@ body {
 .branch-photo {
     max-width: 100%;
     height: auto;
+}
+
+img {
+    border-radius: 20px;
 }

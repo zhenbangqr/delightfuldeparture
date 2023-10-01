@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/*
+    Semester 1 Assignment
+    Delightful Departure Funeral Website
+
+    Delightful Departure Login CSS Styles
+    Author: Wai Yan Ching
+    Date: 16 September 2023
+    Filename: login_styles.css
+*/
+
+/*Whole content */
+.memberLogin {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 85px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; /* Width of the box */
+  height: 50px; /* Height of the box */
+  display: flex;
+  font-size: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px; /* Padding for text */
+  color: #FFFFFF;
+  border-radius: 15px;
+  border: 2px solid #FFFFFF;
+  background-color: #000000;
+}
+
+.memberLoginContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  position: relative;
+  width: 60%; /* Use percentage for width */
+  max-width: 400px; /* Set a maximum width to prevent it from becoming too wide */
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid white; /* White border */
+  background-color: #414141;
+  box-sizing: border-box;
+}
+
+/* style for input fields */
+.memberLoginContainer input[type="text"],
+.memberLoginContainer input[type="password"] {
+  width: 75%;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  background-color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Include padding and border in the width */
+}
+
+.memberLoginContainer input[type="submit"] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: #000000; /* Default background color */
+  color: #fff; /* Default text color */
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  width: 100px;
+  cursor: pointer;
+}
+
+.memberLoginContainer input[type="submit"]:hover {
+  background-color: #414141; /* Background color on hover */
+}
+
+.memberLoginContainer input[type="submit"]:active {
+  background-color: #414141; /* Background color when pressed */
+}
+
+#memberLoginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  color: white;
+}

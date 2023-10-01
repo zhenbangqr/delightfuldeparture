@@ -1,27 +1,46 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     // Define the fixed username
-const fixedUsername = "Kah Lok"; // Replace with the desired fixed username
+    const fixedUsername = "Kah Lok"; // Replace with the desired fixed username
 
-// Clear the previous username data from localStorage
-localStorage.removeItem("username");
+    // Retrieve and populate profile data from local storage
+    const userProfileData = JSON.parse(localStorage.getItem('userProfile'));
 
-// Display the fixed username in the form
-const usernameInput = document.getElementById("username"); // Assuming you have an input field with the ID "username"
+    // Display the fixed username in the form
+    const usernameInput = document.getElementById("username"); // Assuming you have an input field with the ID "username"
 
-if (usernameInput) {
-    usernameInput.value = fixedUsername; // Set the input field's value to the fixed username
-    usernameInput.setAttribute("readonly", "readonly"); // Set it as readonly
-} else {
-    console.log("Username input field not found in the form.");
-}
+    if (usernameInput) {
+        usernameInput.value = fixedUsername; // Set the input field's value to the fixed username
+        usernameInput.setAttribute("readonly", "readonly"); // Set it as readonly
+    } else {
+        console.log("Username input field not found in the form.");
+    }
 
-    // Retrieve and populate profile data
+    // Retrieve and populate other profile fields if available
     const emailInput = document.getElementById("email");
     const addressInput = document.getElementById("address");
     const phoneInput = document.getElementById("phone");
     const editProfileButton = document.getElementById("editProfileButton");
     const saveProfileButton = document.getElementById("saveProfileButton");
-  
+
+    // Function to populate profile fields from the stored data
+    const populateProfileFields = () => {
+        if (userProfileData) {
+            emailInput.value = userProfileData.email;
+            addressInput.value = userProfileData.address;
+            phoneInput.value = userProfileData.phone;
+
+            // Set the profile fields as read-only
+            emailInput.setAttribute("readonly", "readonly");
+            addressInput.setAttribute("readonly", "readonly");
+            phoneInput.setAttribute("readonly", "readonly");
+
+            // Hide the "Edit Profile" button
+            saveProfileButton.style.display = "none";
+            editProfileButton.style.display = "block";
+        }
+    };
+
     // Check if all required fields have data
     const isProfileComplete = () => {
         return emailInput.value && addressInput.value && phoneInput.value;
@@ -46,10 +65,10 @@ if (usernameInput) {
         saveProfileButton.addEventListener("click", function () {
             if (isProfileComplete()) {
                 // Save the updated profile data
-                
-                // Update user profile data in local storage (Assuming you have a userProfile object)
+
+                // Update user profile data in local storage
                 const userProfile = {
-                    username: newUsername, // Include the username
+                    username: fixedUsername, // Include the fixed username
                     email: emailInput.value,
                     address: addressInput.value,
                     phone: phoneInput.value,
@@ -66,10 +85,13 @@ if (usernameInput) {
                 editProfileButton.style.display = "block";
 
                 // Show a success message
-                alert("Profile saved succesfully.");
+                alert("Profile saved successfully.");
             } else {
                 alert("Please fill in all required fields before saving.");
             }
         });
     }
+
+    // Populate the profile fields with stored data
+    populateProfileFields();
 });
