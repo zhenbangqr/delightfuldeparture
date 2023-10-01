@@ -115,7 +115,7 @@ Filename: homepage.css
 
 .service-description-map-container::before {
   content: "";
-  background-image: url("/medias/images/simon/homepage/servicepackages.jpg");
+  background-image: url("/delightfuldeparture/medias/images/simon/homepage/servicepackages.jpg");
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
