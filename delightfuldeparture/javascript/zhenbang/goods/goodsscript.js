@@ -21,7 +21,6 @@ function start() {
   addEvents();
 }
 
-
 function update() {
   addEvents();
   updateTotal();
@@ -50,21 +49,25 @@ function addEvents() {
 
 let itemsAdded = [];
 
-function handle_addCartItem() {
+async function handle_addCartItem() {
   let product = this.parentElement;
   let title = product.querySelector(".product-title").innerHTML;
   let price = product.querySelector(".product-price").innerHTML;
   let imgSrc = product.querySelector(".product-img").src;
+
   console.log(title, price, imgSrc);
 
   let newToAdd = {
-    title,
-    price,
-    imgSrc,
+    title: title,
+    quantity: 1,
+    price: price,
+    imgSrc: imgSrc,
   };
 
   if (itemsAdded.find((el) => el.title == newToAdd.title)) {
-    alert("You have added this item.\nChange the amount in cart if you wish to.");
+    alert(
+      "You have added this item.\nChange the amount in cart if you wish to."
+    );
     return;
   } else {
     itemsAdded.push(newToAdd);
@@ -95,6 +98,15 @@ function handle_changeItemQuantity() {
     this.value = 1;
   }
   this.value = Math.floor(this.value);
+
+  let productTitle = this.parentElement.querySelector(
+    ".cart-product-title"
+  ).innerHTML;
+
+  itemsAdded.find((el) => {
+    if (el.title != productTitle) return;
+    el.quantity = this.value;
+  });
 
   update();
 }
@@ -141,3 +153,5 @@ function CartBoxComponent(title, price, imgSrc) {
         <i class='bx bxs-trash-alt cart-remove'></i>
     </div>`;
 }
+
+function debug() {}
