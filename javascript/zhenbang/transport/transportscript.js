@@ -138,6 +138,6 @@ function CartBoxComponent(title, price, imgSrc) {
             <div class="cart-price">${price}</div>
             <input type="number" value="1" class="cart-quantity">
         </div>
-        <img class="cart-remove" src="/medias/images/icons/trash-solid.svg" width="25px">
+        <img class="cart-remove" src="/delightfuldeparture/medias/images/icons/trash-solid.svg" width="25px">
     </div>`;
 }

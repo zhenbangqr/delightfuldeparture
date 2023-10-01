@@ -32,7 +32,7 @@
 /* Hide the images by default */
 .vehslide {
   display: none;
-  background-image: url(/medias/images/zhenbang/transport/slidebackground.jpg);
+  background-image: url(/delightfuldeparture/medias/images/zhenbang/transport/slidebackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
@@ -253,7 +253,7 @@ header {
 .product-img{
   width: 100%;
   object-fit: cover;
-  background-image: url(/medias/images/zhenbang/transport/gridbackground.jpg);
+  background-image: url(/delightfuldeparture/medias/images/zhenbang/transport/gridbackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
@@ -345,5 +345,5 @@ header {
 }
 
 .plane {
-  background-image: url(/medias/images/zhenbang/transport/planebackground.jpg);
+  background-image: url(/delightfuldeparture/medias/images/zhenbang/transport/planebackground.jpg);
 }

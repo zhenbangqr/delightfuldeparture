@@ -5,23 +5,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const link = document.querySelector("#adpopup-link");
 
   const imageUrls = [
-    "/medias/images/zhenbang/ads/grabdcar.png",
-    "/medias/images/zhenbang/ads/coffin.png",
-    "/medias/images/zhenbang/ads/rate.png",
-    "/medias/images/zhenbang/ads/redemption.png",
-    "/medias/images/zhenbang/ads/transport.png",
-    "/medias/images/zhenbang/ads/buddhist.png",
-    "/medias/images/zhenbang/ads/christian.png",
+    "/delightfuldeparture/medias/images/zhenbang/ads/grabdcar.png",
+    "/delightfuldeparture/medias/images/zhenbang/ads/coffin.png",
+    "/delightfuldeparture/medias/images/zhenbang/ads/rate.png",
+    "/delightfuldeparture/medias/images/zhenbang/ads/redemption.png",
+    "/delightfuldeparture/medias/images/zhenbang/ads/transport.png",
+    "/delightfuldeparture/medias/images/zhenbang/ads/buddhist.png",
+    "/delightfuldeparture/medias/images/zhenbang/ads/christian.png",
   ];
 
   const pageLinks = [
-    "/html/melvin/grabdcar.html",
-    "/html/karhang/coffindesign.html",
-    "/html/simon/feedback.html",
-    "/html/yanching/login.html",
-    "/html/zhenbang/transport.html",
-    "/html/melvin/christianService.html",
-    "/html/simon/buddhistService.html",
+    "/delightfuldeparture/html/melvin/grabdcar.html",
+    "/delightfuldeparture/html/karhang/coffindesign.html",
+    "/delightfuldeparture/html/simon/feedback.html",
+    "/delightfuldeparture/html/yanching/login.html",
+    "/delightfuldeparture/html/zhenbang/transport.html",
+    "/delightfuldeparture/html/melvin/christianService.html",
+    "/delightfuldeparture/html/simon/buddhistService.html",
   ];
 
   function showRandomImage() {

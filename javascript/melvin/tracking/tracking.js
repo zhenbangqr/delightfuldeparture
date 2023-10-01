@@ -20,22 +20,22 @@ function getRandomOrderStatus() {
         {
             status: 'Out for delivery',
             info: 'Your parcel is out for delivery. Delivery will be attempted in the next hour.',
-            image: '/medias/images/melvin/tracking/outfordelivery.png'
+            image: '/delightfuldeparture/medias/images/melvin/tracking/outfordelivery.png'
         },
         {
             status: 'Parcel lost',
             info: 'Your parcel is lost. Please contact our agents.',
-            image: '/medias/images/melvin/tracking/parcellost.png'
+            image: '/delightfuldeparture/medias/images/melvin/tracking/parcellost.png'
         },
         {
             status: 'In transit',
             info: 'Your parcel is in transit and on its way to the delivery hub.',
-            image: '/medias/images/melvin/tracking/intransit.png'
+            image: '/delightfuldeparture/medias/images/melvin/tracking/intransit.png'
         },
 		{
             status: 'Delivered',
             info: 'Your parcel is delivered.',
-            image: '/medias/images/melvin/tracking/delivered.png'
+            image: '/delightfuldeparture/medias/images/melvin/tracking/delivered.png'
         }
     ];
     

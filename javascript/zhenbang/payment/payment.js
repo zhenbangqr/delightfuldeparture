@@ -32,7 +32,7 @@ function displayPaymentSummary() {
     
             // Redirect to homepage after 5 seconds
             setTimeout(() => {
-                window.location.href = "/html/simon/homepage.html";
+                window.location.href = "/delightfuldeparture/html/simon/homepage.html";
             }, 5000);
     
         } else {
@@ -218,7 +218,7 @@ function displayPaymentSummary() {
 displayPaymentSummary();
 
 function redirectToThankYouPage() {
-    window.location.href = "/html/zhenbang/thankyou.html";
+    window.location.href = "/delightfuldeparture/html/zhenbang/thankyou.html";
 }
 
 const submitPaymentButton = document.getElementById("submit");
